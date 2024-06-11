@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitrix24 Form</title>
+</head>
+<body>
+    <h2>Custom Form</h2>
+    <form id="customForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('customForm').onsubmit = async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                NAME: document.getElementById('name').value,
+                EMAIL: [{ VALUE: document.getElementById('email').value, VALUE_TYPE: "WORK" }],
+                PHONE: [{ VALUE: document.getElementById('phone').value, VALUE_TYPE: "WORK" }],
+            };
+
+            // Создание контакта
+            const contactResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.contact.add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ fields: formData })
+            });
+
+            const contactResult = await contactResponse.json();
+            if (!contactResponse.ok) {
+                console.error('Error creating contact:', contactResult);
+                alert('Error creating contact. Check console for details.');
+                return;
+            }
+
+            const contactId = contactResult.result;
+
+            // Создание сделки
+            const dealData = {
+                fields: {
+                    TITLE: "Заполнение формы стартапа",
+                    CONTACT_ID: contactId
+                }
+            };
+
+            const dealResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.deal.add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dealData)
+            });
+
+            const dealResult = await dealResponse.json();
+            if (dealResponse.ok) {
+                alert('Deal created successfully!');
+            } else {
+                console.error('Error creating deal:', dealResult);
+                alert('Error creating deal. Check console for details.');
+            }
+        };
+    </script>
+</body>
+</html>
