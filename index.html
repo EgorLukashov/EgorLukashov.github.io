@@ -6,8 +6,229 @@
 <body>
     <h2>Custom Form</h2>
     <form id="customForm">
+        
+        <label for="industry">Выберите отрасль, в которой работаете (один вариант ответа):</label>
+        <select id="industry" name="UF_CRM_DEAL_1718111937823" required>
+            <option value="44">FinTech</option>
+            <option value="46">EdTech</option>
+            <option value="48">Martech</option>
+            <option value="50">LegalTech</option>
+            <option value="52">RetailTech</option>
+            <option value="54">AI</option>
+            <option value="56">AR/VR</option>
+            <option value="58">GameTech</option>
+            <option value="60">PromTech</option>
+        </select><br><br>
+        
+        <label for="product">Какой продукт/услугу вы производите и продаёте?</label>
+        <textarea id="product" name="UF_CRM_DEAL_1718112024403" required></textarea><br><br>
+
+        <label for="website">Дайте ссылку на сайт или приложите продуктовый каталог:</label>
+        <input type="url" id="website" name="UF_CRM_DEAL_1718112049889" required><br><br>
+
+        <label for="technology">Какая технология лежит в основе продукта?</label>
+        <textarea id="technology" name="UF_CRM_1718626310" required></textarea><br><br>
+
+        <label for="marketType">Для какого рынка вы работаете (выберите один или несколько вариантов):</label><br>
+        <input type="checkbox" id="b2b" name="marketType" value="102"> B2B<br>
+        <input type="checkbox" id="b2c" name="marketType" value="104"> B2C<br>
+        <input type="checkbox" id="b2b2c" name="marketType" value="106"> B2B2C<br>
+        <input type="checkbox" id="b2g" name="marketType" value="108"> B2G<br>
+        <input type="checkbox" id="other" name="marketType" value="110"> Другое<br><br>
+
+        <label for="saleschannels">Какие каналы продаж используете?</label>
+        <select id="saleschannels" name="UF_CRM_1718630480" required>
+            <option value="112">Прямые</option>
+            <option value="114">Личные</option>
+            <option value="116">Партнерский</option>
+            <option value="118">Розничный</option>
+            <option value="120">Digital</option>
+        </select><br><br>
+
+        <label for="clients">Перечислите ваших клиентов:</label>
+        <textarea id="clients" name="UF_CRM_1718630512" required></textarea><br><br>
+
+        <label for="strengths">Что вы считаете сильной стороной своей компании / продукта / услуги?</label>
+        <textarea id="strengths" name="UF_CRM_1718630577" required></textarea><br><br>
+
+        <label for="result">Какой главный результат вы хотите получить?</label>
+        <textarea id="result" name="UF_CRM_1718630592" required></textarea><br><br>
+
+        <label for="investments">Планируете ли вы привлекать инвестиции в ближайший год?</label><br>
+        <input type="radio" id="investYes" name="investments" value="yes" required> Да<br>
+        <input type="radio" id="investNo" name="investments" value="no" required> Нет<br><br>
+
+        <p>ВАЖНО!
+            В качестве максимального балла используется оценка, соответствующая максимально достижимой величине для компании – лидера.
+        </p>
+
+        <label for="productState">Оценка текущего состояния/развития продукта (1-10)</label>
+        <textarea id="productState" name="UF_CRM_1718636915" required></textarea><br><br>
+        
+        <label for="productPlan">Оценка планируемого состояния/развития продукта (1-10)</label>
+        <textarea id="productPlan" name="UF_CRM_1718636949" required></textarea><br><br>
+        
+        <label for="technologyInnovation">Оценка текущего состояния/развития технологии (инновационность) (1-10)</label>
+        <textarea id="technologyInnovation" name="UF_CRM_1718636982" required></textarea><br><br>
+        
+        <label for="financialState">Оценка текущего состояния/развития финансов и инвестиций (1-10)</label>
+        <textarea id="financialState" name="UF_CRM_1718637002" required></textarea><br><br>
+        
+        <label for="financialPlan">Оценка планируемого состояния/развития финансов и инвестиций (1-10)</label>
+        <textarea id="financialPlan" name="UF_CRM_1718637016" required></textarea><br><br>
+        
+        <label for="businessProcesses">Оценка текущего состояния/развития бизнес-процессов (1-10)</label>
+        <textarea id="businessProcesses" name="UF_CRM_1718637033" required></textarea><br><br>
+        
+        <label for="marketingAnalysis">Оценка текущего состояния/развития продвижения и маркетинга, анализ конкурентов (1-10)</label>
+        <textarea id="marketingAnalysis" name="UF_CRM_1718637048" required></textarea><br><br>
+        
+        <label for="marketingPlan">Оценка планируемого состояния/развития продвижения и маркетинга, анализ конкурентов (1-10)</label>
+        <textarea id="marketingPlan" name="UF_CRM_1718637061" required></textarea><br><br>
+        
+        <label for="salesProcesses">Оценка текущего состояния/развития продаж: воронка, CRM, план продаж (1-10)</label>
+        <textarea id="salesProcesses" name="UF_CRM_1718637075" required></textarea><br><br>
+        
+        <label for="salesPlan">Оценка планируемого состояния/развития продаж: воронка, CRM, план продаж (1-10)</label>
+        <textarea id="salesPlan" name="UF_CRM_1718637095" required></textarea><br><br>
+        
+        <label for="teamDevelopment">Оценка текущего состояния/развития команды и организационной культуры (1-10)</label>
+        <textarea id="teamDevelopment" name="UF_CRM_1718637113" required></textarea><br><br>
+        
+        <label for="teamPlan">Оценка планируемого состояния/развития команды и организационной культуры (1-10)</label>
+        <textarea id="teamPlan" name="UF_CRM_1718637131" required></textarea><br><br>
+        
+        <label for="strategyCurrent">Оценка текущего состояния/развития стратегии: SWOT, PESTEL, бизнес-модели (1-10)</label>
+        <textarea id="strategyCurrent" name="UF_CRM_1718637148" required></textarea><br><br>
+        
+        <label for="strategyPlan">Оценка планируемого состояния/развития стратегии: SWOT, PESTEL, бизнес-модели (1-10)</label>
+        <textarea id="strategyPlan" name="UF_CRM_1718637161" required></textarea><br><br>
+        
+        <label for="fileUpload">Загрузите файл с презентацией проекта</label>
+        <input type="file" id="fileUpload" name="UF_CRM_1718637201" required><br><br>
+        
+        <label for="competitiveAdvantages">Конкурентные преимущества технологии в РФ. Необходимо отметить позицию по сравнению с другими технологиями на рынке.</label>
+        <textarea id="competitiveAdvantages" name="UF_CRM_1718641712" required></textarea><br><br>
+        
+        <label for="comments">Дайте комментарий к оценке</label>
+        <textarea id="comments" name="UF_CRM_1718641747" required></textarea><br><br>
+
+        <label for="startTarget">Цель стартапа:</label><br>
+        <input type="checkbox" id="1" name="startTarget" value="140"> Пройти Fast Track, стать резидентом<br>
+        <input type="checkbox" id="1" name="startTarget" value="142"> Доработать заявку на получение гранта ФСИ<br>
+        <input type="checkbox" id="2" name="startTarget" value="144"> Вывести проект (продукт) на следующую стадию (MVP, продажи, пилот и т.п.)<br>
+        <input type="checkbox" id="3" name="startTarget" value="146"> Доработать проект с точки зрения технологической инновационности (доработать технологию) <br>
+        <input type="checkbox" id="4" name="startTarget" value="148"> Масштабирование проекта<br>
+        <input type="checkbox" id="5" name="startTarget" value="150"> Доработка технологии проекта<br><br>
+        <input type="checkbox" id="6" name="startTarget" value="152"> Поиск заказчиков<br><br>
+        <input type="checkbox" id="7" name="startTarget" value="154"> Обучение навыкам продаж<br><br>
+        <input type="checkbox" id="8" name="startTarget" value="156"> Другое<br><br>
+        
+        <label for="strengths">Если на вопрос «цель стартапа» выбрали «Другое», то опишите цель словами</label>
+        <textarea id="strengths" name="UF_CRM_1718641894" required></textarea><br><br>
+
+        <!-- ПОМЕТКИ МЕНТОРА? -->
+        
+        <label for="directions">Выберите темы для формирования индивидуальной траектории стартапа:</label><br>
+        <input type="checkbox" id="1" name="directions" value="158"> Монетизация продукта<br>
+        <input type="checkbox" id="1" name="directions" value="160"> Составление финансовой модели<br>
+        <input type="checkbox" id="2" name="directions" value="162"> Маркетинговая стратегия<br>
+        <input type="checkbox" id="3" name="directions" value="164"> Product market Fit <br>
+        <input type="checkbox" id="4" name="directions" value="166"> Формирование гипотез (креативные методики)<br>
+        <input type="checkbox" id="5" name="directions" value="168"> Ценностное предложение<br><br>
+        <input type="checkbox" id="6" name="directions" value="170"> Исследования аудитории и ее потребностей<br><br>
+        <input type="checkbox" id="7" name="directions" value="172"> Поиск технологического конкурентного преимущества: системный подход к решению и “know how”<br><br>
+        <input type="checkbox" id="8" name="directions" value="174"> Рост и формирование команды<br><br>
+        <input type="checkbox" id="9" name="directions" value="176"> Проблемное интервью<br><br>
+        <input type="checkbox" id="10" name="directions" value="178"> Позиционирование продукта<br><br>
+        <input type="checkbox" id="11" name="directions" value="180"> Бизнес-моделирование с использованием шаблонов бизнес-моделей и генерацией гипотез<br><br>
+        <input type="checkbox" id="12" name="directions" value="182"> Инструменты стратегического анализа (SWOT, PEST)<br><br>
+        <input type="checkbox" id="13" name="directions" value="184"> Создание MVP (MLP, MMP)<br><br>
+        <input type="checkbox" id="14" name="directions" value="186"> Customer Development<br><br>
+        <input type="checkbox" id="15" name="directions" value="188"> Как проводить онбординг и обучение персонала<br><br>
+        <input type="checkbox" id="16" name="directions" value="190"> Внедрение методов проектного управления<br><br>
+        <input type="checkbox" id="17" name="directions" value="192"> Unit экономика<br><br>
+        <input type="checkbox" id="18" name="directions" value="194"> Управленческое планирование<br><br>
+        <input type="checkbox" id="19" name="directions" value="196"> Внедрение Agile: SCRUM, KANBAN<br><br>
+        <input type="checkbox" id="20" name="directions" value="198"> Привлечение инвестиций<br><br>
+
+        <label for="problems">Опишите проблему. Почему она все еще имеет место быть?</label><br>
+        <input type="checkbox" id="1" name="problems" value="208"> Нет решения вовсе<br>
+        <input type="checkbox" id="2" name="problems" value="210"> Текущее решение не устраивает<br>
+        <input type="checkbox" id="3" name="problems" value="212"> Не устраивает логистика<br>
+        <input type="checkbox" id="4" name="problems" value="214"> Не устраивает цена<br>
+
+        <label for="barriers">Барьеры. Что мешает создать подходящее решение проблем целевой аудитории</label>
+        <textarea id="barriers" name="UF_CRM_1718642233" required></textarea><br><br>
+
+        <label for="productHelpRating">Оцените, насколько сейчас ваш продукт помогает решить проблему вашей целевой аудитории (от 1 до 10)</label>
+        <textarea id="productHelpRating" name="UF_CRM_1718642250" required></textarea><br><br>
+
+        <label for="problemSolution">Как ваш продукт и каким образом решает проблему клиента. Старайтесь описывать конкретно</label>
+        <textarea id="problemSolution" name="UF_CRM_1718642279" required></textarea><br><br>
+
+        <label for="targetAudience">Для кого мы работаем? Какие сегменты клиентов и сколько их? Кто готов платить за решение?</label>
+        <textarea id="targetAudience" name="UF_CRM_1718642292" required></textarea><br><br>
+
+        <label for="clientBenefits">Какие преимущества получает клиент, воспользовавшись вашим продуктом и решив свою проблему? Конкретная выгода или состояние (физическое, финансовое, эмоциональное, функциональное). В чем измеряется?</label>
+        <textarea id="clientBenefits" name="UF_CRM_1718642307" required></textarea><br><br>
+
+        <label for="advantageRating">Дайте оценку вашим преимуществам (от 1 до 10)</label>
+        <textarea id="advantageRating" name="UF_CRM_1718642330" required></textarea><br><br>
+
+        <label for="productDescription">В чем суть продукта? Как упаковано решение?</label>
+        <textarea id="productDescription" name="UF_CRM_1718642345" required></textarea><br><br>
+
+        <label for="currentProductState">Дайте оценку текущему состоянию: Суть продукта. Как упаковано решение</label>
+        <textarea id="currentProductState" name="UF_CRM_1718642357" required></textarea><br><br>
+
+        <label for="technologyMaturity">Дайте оценку зрелости технологии в основе продукта</label>
+        <textarea id="technologyMaturity" name="UF_CRM_1718642371" required></textarea><br><br>
+
+        <label for="teamState">Оценка текущего состояния команды: распределение ролей и функций, коммуникации, достаточность компетенций, эффективность</label>
+        <textarea id="teamState" name="UF_CRM_1718642383" required></textarea><br><br>
+
+        <label for="teamRating">Дайте оценку текущего состояния команды: распределение ролей и функций, коммуникации, достаточность компетенций, эффективность (от 1 до 10)</label>
+        <textarea id="teamRating" name="UF_CRM_1718642400" required></textarea><br><br>
+
+        <label for="marketAlternatives">Есть ли аналогичные или альтернативные способы решения сейчас на рынке или до вашего прихода на рынок?</label>
+        <textarea id="marketAlternatives" name="UF_CRM_1718642419" required></textarea><br><br>
+
+        <label for="marketAlternativesRating">Дайте оценку есть ли аналогичные или альтернативные способы решения сейчас на рынке или до вашего прихода на рынок? (от 1 до 10)</label>
+        <textarea id="marketAlternativesRating" name="UF_CRM_1718642527" required></textarea><br><br>
+
+        <label for="monetizationModel">Опишите как продукт зарабатывает? Модель монетизации. Виды услуг и формат поставки продукта(ов)</label>
+        <textarea id="monetizationModel" name="UF_CRM_1718642661" required></textarea><br><br>
+
+        <label for="monetizationRating">Дайте оценку как продукт зарабатывает? Модель монетизации. Виды услуг и формат поставки продукта(ов) (от 1 до 10)</label>
+        <textarea id="monetizationRating" name="UF_CRM_1718642676" required></textarea><br><br>
+
+        <label for="problemUnderstanding">Уровень понимания: какую проблему клиента мы решаем? почему клиент должен купить именно у нас? Какие решения мы предлагаем каждому сегменту клиентов?</label>
+        <textarea id="problemUnderstanding" name="UF_CRM_1718642693" required></textarea><br><br>
+
+        <label for="problemUnderstandingRating">Дайте оценку уровню понимания: какую проблему клиента мы решаем? почему клиент должен купить именно у нас? Какие решения мы предлагаем каждому сегменту клиентов? (от 1 до 10)</label>
+        <textarea id="problemUnderstandingRating" name="UF_CRM_1718642712" required></textarea><br><br>
+
+        <label for="channelEffectiveness">Оценка эффективности действующих каналов (если они есть) или понимания приоритетных и потенциально эффективных каналов</label>
+        <textarea id="channelEffectiveness" name="UF_CRM_1718642732" required></textarea><br><br>
+
+        <label for="channelEffectivenessRating">Дайте оценку эффективности действующих каналов (если они есть) или понимания приоритетных и потенциально эффективных каналов (от 1 до 10)</label>
+        <textarea id="channelEffectivenessRating" name="UF_CRM_1718642750" required></textarea><br><br>
+
+        <label for="priorityGoals">Исходя из ответов и оценок, определите 3 приоритетные цели на акселератор</label>
+        <textarea id="priorityGoals" name="UF_CRM_1718642854" required></textarea><br><br>
+
+        <label for="goalBarriers">Определите барьеры достижения для каждой цели</label>
+        <textarea id="goalBarriers" name="UF_CRM_1718642893" required></textarea><br><br>
+
+        <label for="projectName">Название проекта</label>
+        <textarea id="projectName" name="UF_CRM_1718642957" required></textarea><br><br>
+
+
+<!--                                                                                                           -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
+        <!-- НЕТ ИМЕНИ? -->
         
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
@@ -15,61 +236,207 @@
         <label for="phone">Phone:</label>
         <input type="text" id="phone" name="phone" required><br><br>
 
-        <input type="submit" value="Submit">
-    </form>
+<div id="notification"></div>
 
+        <input type="submit" id="Submit" value="Submit">
+    </form>
     <script>
+        let formSubmitted = false;
+
+    document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('customForm').onsubmit = async function(e) {
             e.preventDefault();
-            
+            if (formSubmitted) {
+                alert('Форма уже была отправлена. Пожалуйста, подождите завершения процесса.');
+                return;
+            }
+
+            const submitButton = document.getElementById('Submit');
+            if (!submitButton) {
+                console.error('Submit button not found.');
+                return;
+            }
+
+            submitButton.disabled = true;
             const formData = {
                 NAME: document.getElementById('name').value,
                 EMAIL: [{ VALUE: document.getElementById('email').value, VALUE_TYPE: "WORK" }],
                 PHONE: [{ VALUE: document.getElementById('phone').value, VALUE_TYPE: "WORK" }],
+                UF_CRM_DEAL_1718111937823: document.getElementById('industry').value,
+                UF_CRM_DEAL_1718112024403: document.getElementById('product').value,
+                UF_CRM_DEAL_1718112049889: document.getElementById('website').value,
+                UF_CRM_1718626310: document.getElementById('technology').value,
+                UF_CRM_1718626452: Array.from(document.querySelectorAll('input[name="marketType"]:checked')).map(el1 => el1.value),
+                UF_CRM_1718630480: document.getElementById('saleschannels').value,
+                UF_CRM_1718630512: document.getElementById('clients').value,
+                UF_CRM_1718630577: document.getElementById('strengths').value,
+                UF_CRM_1718630592: document.getElementById('result').value,
+                UF_CRM_1718630626: document.querySelector('input[name="investments"]:checked').value === 'yes' ? true : false,
+                ////////////////////////////////////////////////////
+                UF_CRM_1718636915: document.getElementById('productState').value,
+                UF_CRM_1718636949: document.getElementById('productPlan').value,
+                UF_CRM_1718636982: document.getElementById('technologyInnovation').value,
+                UF_CRM_1718637002: document.getElementById('financialState').value,
+                UF_CRM_1718637016: document.getElementById('financialPlan').value,
+                UF_CRM_1718637033: document.getElementById('businessProcesses').value,
+                UF_CRM_1718637048: document.getElementById('marketingAnalysis').value,
+                UF_CRM_1718637061: document.getElementById('marketingPlan').value,
+                UF_CRM_1718637075: document.getElementById('salesProcesses').value,
+                UF_CRM_1718637095: document.getElementById('salesPlan').value,
+                UF_CRM_1718637113: document.getElementById('teamDevelopment').value,
+                UF_CRM_1718637131: document.getElementById('teamPlan').value,
+                UF_CRM_1718637148: document.getElementById('strategyCurrent').value,
+                UF_CRM_1718637161: document.getElementById('strategyPlan').value,
+                //////////////////////////////////////////////////////
+                UF_CRM_1718641712: document.getElementById('competitiveAdvantages').value,
+                UF_CRM_1718641747: document.getElementById('comments').value,
+                UF_CRM_1718641862: Array.from(document.querySelectorAll('input[name="startTarget"]:checked')).map(el2 => el2.value),
+                UF_CRM_1718641894: document.getElementById('strengths').value, // для поля "Другое"
+                UF_CRM_1718642106: Array.from(document.querySelectorAll('input[name="directions"]:checked')).map(el3 => el3.value),
+                UF_CRM_1718646009: Array.from(document.querySelectorAll('input[name="problems"]:checked')).map(el4 => el4.value),
+                UF_CRM_1718642233: document.getElementById('barriers').value,
+                UF_CRM_1718642250: document.getElementById('productHelpRating').value,
+                UF_CRM_1718642279: document.getElementById('problemSolution').value,
+                UF_CRM_1718642292: document.getElementById('targetAudience').value,
+                UF_CRM_1718642307: document.getElementById('clientBenefits').value,
+                UF_CRM_1718642330: document.getElementById('advantageRating').value,
+                UF_CRM_1718642345: document.getElementById('productDescription').value,
+                UF_CRM_1718642357: document.getElementById('currentProductState').value,
+                UF_CRM_1718642371: document.getElementById('technologyMaturity').value,
+                UF_CRM_1718642383: document.getElementById('teamState').value,
+                UF_CRM_1718642400: document.getElementById('teamRating').value,
+                UF_CRM_1718642419: document.getElementById('marketAlternatives').value,
+                UF_CRM_1718642527: document.getElementById('marketAlternativesRating').value,
+                UF_CRM_1718642661: document.getElementById('monetizationModel').value,
+                UF_CRM_1718642676: document.getElementById('monetizationRating').value,
+                UF_CRM_1718642693: document.getElementById('problemUnderstanding').value,
+                UF_CRM_1718642712: document.getElementById('problemUnderstandingRating').value,
+                UF_CRM_1718642732: document.getElementById('channelEffectiveness').value,
+                UF_CRM_1718642750: document.getElementById('channelEffectivenessRating').value,
+                UF_CRM_1718642854: document.getElementById('priorityGoals').value,
+                UF_CRM_1718642893: document.getElementById('goalBarriers').value,
+                UF_CRM_1718642957: document.getElementById('projectName').value
             };
-
-            // Создание контакта
-            const contactResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.contact.add', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ fields: formData })
-            });
-
-            const contactResult = await contactResponse.json();
-            if (!contactResponse.ok) {
-                console.error('Error creating contact:', contactResult);
-                alert('Error creating contact. Check console for details.');
+            
+            const fileInput = document.getElementById('fileUpload');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Выберите файл перед отправкой.');
                 return;
             }
-
-            const contactId = contactResult.result;
-
-            // Создание сделки
-            const dealData = {
-                fields: {
-                    TITLE: "Заполнение формы стартапа",
-                    CONTACT_ID: contactId
+    
+            const reader = new FileReader();
+            reader.onload = async function(event) {
+                const base64String = event.target.result.split(',')[1];
+                const fileName = file.name;
+                
+                try {
+                    const contactResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.contact.add', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ fields: formData })
+                    });
+    
+                    const contactResult = await contactResponse.json();
+                    if (!contactResponse.ok) {
+                        console.error('Error creating contact:', contactResult);
+                        alert('Error creating contact. Check console for details.');
+                        return;
+                    }
+    
+                    const contactId = contactResult.result;
+    
+                    const dealData = {
+                        fields: {
+                            TITLE: "Заполнение формы стартапа",
+                            CONTACT_ID: contactId,
+                            UF_CRM_DEAL_1718111937823: formData.UF_CRM_DEAL_1718111937823, // Выберите отрасль, в которой работаете (один вариант ответа)
+                    UF_CRM_DEAL_1718112024403: formData.UF_CRM_DEAL_1718112024403, // Какие каналы продаж используете?
+                    UF_CRM_DEAL_1718112049889: formData.UF_CRM_DEAL_1718112049889, // Вставьте ссылку на презентацию проекта
+                    UF_CRM_1718626310: formData.UF_CRM_1718626310, // Планируете ли вы привлекать инвестиции в ближайший год?
+                    UF_CRM_1718626452: formData.UF_CRM_1718626452, // Для какого рынка вы работаете?
+                    UF_CRM_1718630480: formData.UF_CRM_1718630480, // Дайте оценку текущего состояния/развития продукта (1-10)
+                    UF_CRM_1718630512: formData.UF_CRM_1718630512, // Дайте оценку планируемого состояния/развития продукта (1-10)
+                    UF_CRM_1718630577: formData.UF_CRM_1718630577, // Оценка текущего состояния/развития технологии (инновационность) (1-10)
+                    UF_CRM_1718630592: formData.UF_CRM_1718630592, // Оценка текущего состояния/развития финансов и инвестиций (1-10)
+                    UF_CRM_1718630626: formData.UF_CRM_1718630626, // Планируете ли вы привлекать инвестиции в ближайший год? (yes/no)
+                    UF_CRM_1718636915: formData.UF_CRM_1718636915, // Оценка текущего состояния/развития продукта (1-10)
+                    UF_CRM_1718636949: formData.UF_CRM_1718636949, // Оценка планируемого состояния/развития продукта (1-10)
+                    UF_CRM_1718636982: formData.UF_CRM_1718636982, // Оценка текущего состояния/развития технологии (инновационность) (1-10)
+                    UF_CRM_1718637002: formData.UF_CRM_1718637002, // Оценка текущего состояния/развития финансов и инвестиций (1-10)
+                    UF_CRM_1718637016: formData.UF_CRM_1718637016, // Оценка планируемого состояния/развития финансов и инвестиций (1-10)
+                    UF_CRM_1718637033: formData.UF_CRM_1718637033, // Оценка текущего состояния/развития бизнес-процессов (1-10)
+                    UF_CRM_1718637048: formData.UF_CRM_1718637048, // Оценка текущего состояния/развития продвижения и маркетинга, анализ конкурентов (1-10)
+                    UF_CRM_1718637061: formData.UF_CRM_1718637061, // Оценка планируемого состояния/развития продвижения и маркетинга, анализ конкурентов (1-10)
+                    UF_CRM_1718637075: formData.UF_CRM_1718637075, // Оценка текущего состояния/развития продаж: воронка, CRM, план продаж (1-10)
+                    UF_CRM_1718637095: formData.UF_CRM_1718637095, // Оценка планируемого состояния/развития продаж: воронка, CRM, план продаж (1-10)
+                    UF_CRM_1718637113: formData.UF_CRM_1718637113, // Оценка текущего состояния/развития команды и организационной культуры (1-10)
+                    UF_CRM_1718637131: formData.UF_CRM_1718637131, // Оценка планируемого состояния/развития команды и организационной культуры (1-10)
+                    UF_CRM_1718637148: formData.UF_CRM_1718637148, // Оценка текущего состояния/развития стратегии: SWOT, PESTEL, бизнес-модели (1-10)
+                    UF_CRM_1718637161: formData.UF_CRM_1718637161, // Оценка планируемого состояния/развития стратегии: SWOT, PESTEL, бизнес-модели (1-10)
+                    // UF_CRM_1718637201: formData.UF_CRM_1718637201, // Загрузите файл с презентацией проекта
+                    UF_CRM_1718641712: formData.UF_CRM_1718641712,
+                    UF_CRM_1718641747: formData.UF_CRM_1718641747,
+                    UF_CRM_1718641862: formData.UF_CRM_1718641862, // Цель стартапа
+                    UF_CRM_1718641894: formData.UF_CRM_1718641894, // для поля "Другое"
+                    UF_CRM_1718642106: formData.UF_CRM_1718642106, // Выберите темы для формирования индивидуальной траектории стартапа:
+                    UF_CRM_1718646009: formData.UF_CRM_1718646009, // Опишите проблему. Почему она все еще имеет место быть?
+                    UF_CRM_1718642233: formData.UF_CRM_1718642233,
+                    UF_CRM_1718642250: formData.UF_CRM_1718642250,
+                    UF_CRM_1718642279: formData.UF_CRM_1718642279,
+                    UF_CRM_1718642292: formData.UF_CRM_1718642292,
+                    UF_CRM_1718642307: formData.UF_CRM_1718642307,
+                    UF_CRM_1718642330: formData.UF_CRM_1718642330,
+                    UF_CRM_1718642345: formData.UF_CRM_1718642345,
+                    UF_CRM_1718642357: formData.UF_CRM_1718642357,
+                    UF_CRM_1718642371: formData.UF_CRM_1718642371,
+                    UF_CRM_1718642383: formData.UF_CRM_1718642383,
+                    UF_CRM_1718642400: formData.UF_CRM_1718642400,
+                    UF_CRM_1718642419: formData.UF_CRM_1718642419,
+                    UF_CRM_1718642527: formData.UF_CRM_1718642527,
+                    UF_CRM_1718642661: formData.UF_CRM_1718642661,
+                    UF_CRM_1718642676: formData.UF_CRM_1718642676,
+                    UF_CRM_1718642693: formData.UF_CRM_1718642693,
+                    UF_CRM_1718642712: formData.UF_CRM_1718642712,
+                    UF_CRM_1718642732: formData.UF_CRM_1718642732,
+                    UF_CRM_1718642750: formData.UF_CRM_1718642750,
+                    UF_CRM_1718642854: formData.UF_CRM_1718642854,
+                    UF_CRM_1718642893: formData.UF_CRM_1718642893,
+                    UF_CRM_1718642957: formData.UF_CRM_1718642957, // Название проекта
+                            UF_CRM_1718637201: {
+                                'fileData': [fileName, base64String]
+                            }
+                        }
+                    };
+    
+                    const dealResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.deal.add', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(dealData)
+                    });
+    
+                    if (dealResponse.ok) {
+                        alert('Deal created successfully!');
+                    } else {
+                        const dealResult = await dealResponse.json();
+                        console.error('Error creating deal:', dealResult);
+                        alert('Error creating deal. Check console for details.');
+                    }
+                } catch (error) {
+                    console.error('Error processing form submission:', error);
+                    alert('Error processing form submission. Check console for details.');
                 }
             };
-
-            const dealResponse = await fetch('https://b24-ddb20n.bitrix24.ru/rest/1/ic4zj3x6q76zilcs/crm.deal.add', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(dealData)
-            });
-
-            const dealResult = await dealResponse.json();
-            if (dealResponse.ok) {
-                alert('Deal created successfully!');
-            } else {
-                console.error('Error creating deal:', dealResult);
-                alert('Error creating deal. Check console for details.');
-            }
+    
+            reader.readAsDataURL(file);
         };
+    });
     </script>
+    
 </body>
 </html>
